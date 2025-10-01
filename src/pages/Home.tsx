@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Shield, Clock, Award, Users, CheckCircle, ArrowRight, Star } from 'lucide-react';
+import PagePopup from '../components/PagePopup';
 
 const Home: React.FC = () => {
   const features = [
@@ -264,6 +265,8 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <PagePopup message="Welcome to Yash Pathology! Enjoy 20% off your first test." />
     </div>
   );
 };

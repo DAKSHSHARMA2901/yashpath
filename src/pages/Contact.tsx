@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from 'lucide-react';
 import type { ContactForm } from '../types';
+import PagePopup from '../components/PagePopup';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState<ContactForm>({
@@ -400,6 +401,8 @@ const Contact: React.FC = () => {
             </div>
           </div>
         </div>
+
+        <PagePopup message="Contact us for home sample collection and 24/7 support!" />
       </div>
     </div>
   );

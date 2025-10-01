@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, Users, Heart, Target, Eye, Shield, Clock, CheckCircle } from 'lucide-react';
+import PagePopup from '../components/PagePopup';
 
 const About: React.FC = () => {
   const teamMembers = [
@@ -286,6 +287,8 @@ const About: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <PagePopup message="15+ years of trusted diagnostic excellence." />
     </div>
   );
 };
