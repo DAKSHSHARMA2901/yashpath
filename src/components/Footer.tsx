@@ -52,14 +52,14 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/book-appointment" className="text-gray-400 hover:text-white transition-colors">
+                {/* <Link to="/book-appointment" className="text-gray-400 hover:text-white transition-colors">
                   Book Appointment
-                </Link>
+                </Link> */}
               </li>
               <li>
-                <Link to="/patient-portal" className="text-gray-400 hover:text-white transition-colors">
+                {/* <Link to="/patient-portal" className="text-gray-400 hover:text-white transition-colors">
                   Patient Portal
-                </Link>
+                </Link> */}
               </li>
               <li>
                 <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Blood Tests</li>
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
               <li>Health Checkups</li>
               <li>Home Collection</li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div>
@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-500" />
-                <span className="text-gray-400">+91 98765 43210</span>
+                <span className="text-gray-400">+91 90299 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-500" />

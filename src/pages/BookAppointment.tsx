@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { Calendar, Clock, User, Phone, Mail, FileText, CheckCircle } from 'lucide-react';
 import { diagnosticTests, timeSlots } from '../utils/mockData';
 import type { Appointment } from '../types';
+import PagePopup from '../components/PagePopup';
 
 const BookAppointment: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -478,6 +479,7 @@ const BookAppointment: React.FC = () => {
           </div>
         </div>
       </div>
+      <PagePopup message="Need help booking? Call our support team 24/7!" />
     </div>
   );
 };

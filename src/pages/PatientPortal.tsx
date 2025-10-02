@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, FileText, User, Lock, Eye, Download, Clock, CheckCircle, AlertCircle } from 'lucide-react';
 import { mockPatient, mockTestResults } from '../utils/mockData';
+import PagePopup from '../components/PagePopup';
 
 const PatientPortal: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -345,6 +346,7 @@ const PatientPortal: React.FC = () => {
             )}
           </div>
         </div>
+
       </div>
     </div>
   );
