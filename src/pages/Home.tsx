@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Shield, Clock, Award, Users, CheckCircle, ArrowRight, Star } from 'lucide-react';
 import PagePopup from '../components/PagePopup';
+import lalLabsLogo from '../assets/lal labs.png';
+import metropolisLogo from '../assets/metropolis.png';
 
 const Home: React.FC = () => {
   const features = [
@@ -124,6 +126,32 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Partner Companies */}
+      <section className="py-12 bg-white border-y border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Trusted Partners
+            </h2>
+            <p className="text-gray-600">
+              Collaborating with leading healthcare organizations
+            </p>
+          </div>
+          <div className="flex justify-center items-center gap-12 flex-wrap">
+            <div className="inline-flex items-center justify-center">
+              <div className="bg-white px-10 py-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-blue-200 hover:border-blue-500 hover:scale-105">
+                <img src={metropolisLogo} alt="Metropolis Healthcare" className="h-16 w-auto object-contain" />
+              </div>
+            </div>
+            <div className="inline-flex items-center justify-center">
+              <div className="bg-white px-10 py-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-green-200 hover:border-green-500 hover:scale-105">
+                <img src={lalLabsLogo} alt="Dr. Lal PathLabs" className="h-16 w-auto object-contain" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Special Offers */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -236,6 +264,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
 
       {/* CTA Section */}
       <section className="py-16 bg-blue-600">
