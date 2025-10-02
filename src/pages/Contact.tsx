@@ -402,7 +402,6 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        <PagePopup message="Contact us for home sample collection and 24/7 support!" />
       </div>
     </div>
   );

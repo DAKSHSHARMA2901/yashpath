@@ -347,7 +347,6 @@ const PatientPortal: React.FC = () => {
           </div>
         </div>
 
-        <PagePopup message="Access your reports securely in the patient portal." />
       </div>
     </div>
   );

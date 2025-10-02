@@ -160,7 +160,7 @@ const TestCatalog: React.FC = () => {
 
               <div className="flex gap-3">
                 <Link
-                  to={`/book-appointment?testId=${test.id}`}
+                  to="/contact"
                   className={`flex-1 py-3 px-4 rounded-lg font-semibold transition-colors inline-flex items-center justify-center ${
                     test.availability
                       ? 'bg-blue-600 hover:bg-blue-700 text-white'
@@ -171,7 +171,7 @@ const TestCatalog: React.FC = () => {
                   {test.availability ? (
                     <>
                       <Calendar className="h-4 w-4 mr-2" />
-                      Book Now
+                      Contact Us
                     </>
                   ) : (
                     'Not Available'
@@ -294,7 +294,7 @@ const TestCatalog: React.FC = () => {
                 )}
 
                 <Link
-                  to={`/book-appointment?testId=${activeTest.id}`}
+                  to="/contact"
                   className={`w-full py-3 px-4 rounded-lg font-semibold transition-colors inline-flex items-center justify-center ${
                     activeTest.availability
                       ? 'bg-blue-600 hover:bg-blue-700 text-white'
@@ -305,7 +305,7 @@ const TestCatalog: React.FC = () => {
                   {activeTest.availability ? (
                     <>
                       <Calendar className="h-5 w-5 mr-2" />
-                      Book This Test
+                      Contact Us
                     </>
                   ) : (
                     'Currently Unavailable'
@@ -317,7 +317,6 @@ const TestCatalog: React.FC = () => {
         )}
       </AnimatePresence>
 
-      <PagePopup message="Browse our most popular diagnostic tests!" />
     </div>
   );
 };

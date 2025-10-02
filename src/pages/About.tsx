@@ -288,7 +288,6 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      <PagePopup message="15+ years of trusted diagnostic excellence." />
     </div>
   );
 };

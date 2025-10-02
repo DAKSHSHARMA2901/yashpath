@@ -295,7 +295,8 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <PagePopup message="Welcome to Yash Pathology! Enjoy 20% off your first test." />
+      <PagePopup  title="Quick Inquiry" 
+       message="Drop your details and we’ll call you back!"  />
     </div>
   );
 };
