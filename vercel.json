@@ -2,8 +2,11 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
-  "installCommand": "npm install",
+  "installCommand": "npm ci --omit=optional",
   "framework": null,
+  "env": {
+    "ROLLUP_SKIP_NATIVE": "true"
+  },
   "rewrites": [
     {
       "source": "/(.*)",
